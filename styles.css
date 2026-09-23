@@ -126,3 +126,28 @@ footer{display:flex;justify-content:space-between;align-items:center;padding:34p
   .repsol-logo-real.mini{height:18px;max-width:78px}
   .real-stage-photo{height:470px}
 }
+
+/* Repsol logo: use the real local asset without framing or padding */
+.repsol-logo-real{
+  display:block!important;
+  width:auto!important;
+  height:34px!important;
+  max-width:none!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  object-fit:contain!important;
+}
+.phone-brand .repsol-logo-real.mini{
+  height:17px!important;
+  width:auto!important;
+}
+.footer-brand .repsol-logo-real.footer-logo{
+  height:28px!important;
+  width:auto!important;
+}
+@media(max-width:780px){
+  .brand-lockup>.repsol-logo-real{height:27px!important}
+}
