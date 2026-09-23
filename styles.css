@@ -25,3 +25,73 @@ footer{display:flex;justify-content:space-between;align-items:center;padding:34p
 .sun{position:absolute;border-radius:50%;background:var(--yellow);opacity:.95}.sun-one{width:250px;height:250px;right:-90px;top:-90px}
 @media(max-width:1180px){.topbar nav{display:none}.hero{grid-template-columns:1fr;padding-top:34px}.hero-copy{border-radius:16px}.hero-visual{grid-template-columns:minmax(0,1fr) 300px}.pattern-band{margin-top:0}.control{grid-template-columns:1fr}.conditions{grid-template-columns:1fr;gap:30px}}
 @media(max-width:780px){.topbar{height:72px;padding:0 18px}.brand-lockup{gap:8px}.brisa-logo{height:31px}.repsol-logo{height:29px}.brand-x{font-size:19px}.topbar .button{padding:11px 13px;font-size:11px}.hero{padding:18px 14px 0;display:block}.hero-copy{padding:34px 22px;margin-bottom:14px}.hero h1{font-size:55px}.hero-lead{font-size:18px}.benefits{grid-template-columns:1fr}.hero-actions{align-items:stretch;flex-direction:column}.event-meta{flex-direction:column}.hero-visual{display:block}.stage-card{min-height:470px}.stage-card>img{height:470px}.desktop-status{display:none}.handwritten{font-size:19px}.iphone-wrap{margin:24px 0}.iphone{width:min(320px,88vw)}.pattern-band{height:55px}.shape{min-height:55px}.section-heading{grid-template-columns:1fr;gap:20px}.how{padding:70px 22px}.steps{grid-template-columns:1fr}.steps article,.steps article+article{border-right:0;border-bottom:1px solid var(--line);padding:25px 0}.control{padding:70px 22px}.conditions{padding:60px 22px}.dashboard-kpis{grid-template-columns:1fr}.dashboard-list>div{grid-template-columns:14px 76px 1fr}.dashboard-list em{display:none}footer{flex-direction:column;gap:20px}.choice-grid,.fake-form{grid-template-columns:1fr}.modal-card{padding:28px 20px}.modal-card h2{font-size:34px}}
+
+/* Self-contained brand treatment inspired by Brisa's angular wordmark */
+.brisa-word{
+  display:inline-block;
+  font-family:Syncopate,Manrope,sans-serif;
+  font-weight:700;
+  letter-spacing:-.11em;
+  font-size:36px;
+  line-height:.9;
+  transform:scaleX(1.05);
+  transform-origin:left center;
+}
+.brisa-word::first-letter{letter-spacing:-.16em}
+.brisa-word.mini{font-size:19px;letter-spacing:-.1em}
+.brisa-word.mini-ticket{font-size:28px;letter-spacing:-.1em}
+.repsol-brand{display:inline-flex;align-items:center;gap:8px}
+.repsol-brand b{font-size:30px;font-style:italic;color:#0d2341;letter-spacing:-.05em}
+.repsol-brand.mini b{font-size:16px}
+.repsol-icon{display:inline-block;width:44px;height:28px;border-radius:50% 50% 45% 45%;background:
+ linear-gradient(180deg,#ffcf24 0 34%,#ff8b22 34% 60%,#e92145 60% 100%);
+ position:relative;transform:skewX(-8deg)}
+.repsol-brand.mini .repsol-icon{width:25px;height:16px}
+.repsol-icon:after{content:"";position:absolute;left:-2px;right:-2px;top:48%;height:5px;background:#f4f0d9;transform:rotate(-7deg)}
+.footer-brand .repsol-brand b{font-size:24px}
+.brand-lockup{min-width:320px}
+
+/* Festival scene built in CSS so the proposal has no external media dependency */
+.festival-scene{position:relative;width:100%;height:620px;overflow:hidden;background:#e4c9d9}
+.scene-sky{position:absolute;inset:0;background:
+ radial-gradient(circle at 72% 14%,rgba(255,230,175,.9),transparent 24%),
+ linear-gradient(180deg,#d7d0ef 0 34%,#f3b996 63%,#e77f57 100%)}
+.scene-sky:after,.scene-sky:before{content:"";position:absolute;bottom:108px;width:18px;height:160px;background:#18212e;border-radius:60% 60% 0 0;opacity:.85}
+.scene-sky:before{left:8%;box-shadow:18px -35px 0 -8px #18212e,-16px -22px 0 -8px #18212e}
+.scene-sky:after{right:7%;box-shadow:18px -36px 0 -8px #18212e,-16px -20px 0 -8px #18212e}
+.scene-stage{position:absolute;left:11%;right:11%;top:19%;height:340px;background:#121820;border:10px solid #252932;box-shadow:0 18px 45px rgba(0,0,0,.35)}
+.scene-stage:before,.scene-stage:after{content:"";position:absolute;top:-18px;bottom:-20px;width:76px;background:
+ linear-gradient(45deg,#ff4a2e 0 20%,transparent 20% 40%,#1269db 40% 60%,transparent 60% 80%,#ffd52b 80%),
+ #f4f0d9}
+.scene-stage:before{left:-86px}.scene-stage:after{right:-86px}
+.scene-roof{position:absolute;left:-8%;right:-8%;top:-94px;height:82px;background:#f4f0d9;border:8px solid #171b22;clip-path:polygon(8% 25%,92% 25%,100% 100%,0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:20px}
+.scene-roof .mini-brisa{font-family:Syncopate,sans-serif;font-size:27px;font-weight:700;letter-spacing:-.09em}
+.scene-roof small{font-weight:800;color:#c5222a;letter-spacing:.1em}
+.scene-screen{position:absolute;left:16%;right:16%;top:17%;height:160px;background:
+ radial-gradient(circle at 50% 30%,rgba(255,205,66,.95),transparent 22%),
+ linear-gradient(180deg,#14396a,#0f151d 75%);
+ color:white;display:grid;place-items:center;font-family:Syncopate,sans-serif;font-size:46px;font-weight:700;letter-spacing:-.08em;box-shadow:0 0 40px rgba(255,187,62,.35) inset}
+.scene-lights{position:absolute;left:20%;right:20%;top:20px;display:flex;justify-content:space-between}.scene-lights i{width:12px;height:12px;border-radius:50%;background:#ffd45a;box-shadow:0 0 35px 12px rgba(255,190,62,.6)}
+.scene-crowd{position:absolute;left:-5%;right:-5%;bottom:-12px;height:190px;background:
+ radial-gradient(circle at 3% 50%,#111 0 11px,transparent 12px),
+ radial-gradient(circle at 9% 56%,#261912 0 15px,transparent 16px),
+ radial-gradient(circle at 15% 48%,#090909 0 12px,transparent 13px),
+ radial-gradient(circle at 22% 55%,#2a1e18 0 17px,transparent 18px),
+ radial-gradient(circle at 29% 48%,#151515 0 13px,transparent 14px),
+ radial-gradient(circle at 36% 54%,#331e17 0 17px,transparent 18px),
+ radial-gradient(circle at 43% 45%,#101010 0 14px,transparent 15px),
+ radial-gradient(circle at 50% 55%,#241916 0 18px,transparent 19px),
+ radial-gradient(circle at 58% 48%,#111 0 14px,transparent 15px),
+ radial-gradient(circle at 65% 54%,#251c17 0 17px,transparent 18px),
+ radial-gradient(circle at 72% 47%,#111 0 14px,transparent 15px),
+ radial-gradient(circle at 80% 55%,#2b1a16 0 18px,transparent 19px),
+ radial-gradient(circle at 88% 48%,#111 0 14px,transparent 15px),
+ radial-gradient(circle at 95% 56%,#261914 0 18px,transparent 19px),
+ linear-gradient(180deg,transparent 0 22%,#171311 23% 100%)}
+.scene-crowd:before,.scene-crowd:after{content:"";position:absolute;width:18px;height:110px;background:#24120f;border-radius:20px;bottom:88px;transform-origin:bottom center}
+.scene-crowd:before{left:39%;transform:rotate(-17deg)}.scene-crowd:after{left:43%;transform:rotate(18deg)}
+.stage-card>img{display:none!important}
+@media(max-width:780px){
+  .brand-lockup{min-width:0}.brisa-word{font-size:27px}.repsol-brand b{font-size:21px}.repsol-icon{width:33px;height:22px}
+  .festival-scene{height:470px}.scene-stage{left:18%;right:18%;top:27%;height:250px}.scene-stage:before,.scene-stage:after{width:45px}.scene-stage:before{left:-53px}.scene-stage:after{right:-53px}.scene-roof .mini-brisa{font-size:20px}.scene-screen{font-size:30px;height:110px}
+}
