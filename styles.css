@@ -95,3 +95,34 @@ footer{display:flex;justify-content:space-between;align-items:center;padding:34p
   .brand-lockup{min-width:0}.brisa-word{font-size:27px}.repsol-brand b{font-size:21px}.repsol-icon{width:33px;height:22px}
   .festival-scene{height:470px}.scene-stage{left:18%;right:18%;top:27%;height:250px}.scene-stage:before,.scene-stage:after{width:45px}.scene-stage:before{left:-53px}.scene-stage:after{right:-53px}.scene-roof .mini-brisa{font-size:20px}.scene-screen{font-size:30px;height:110px}
 }
+
+
+/* Real brand assets + real Brisa festival photo */
+.repsol-logo-real{
+  display:block;
+  width:auto;
+  height:38px;
+  max-width:180px;
+  object-fit:contain;
+}
+.repsol-logo-real.mini{
+  height:20px;
+  max-width:92px;
+}
+.repsol-logo-real.footer-logo{
+  height:30px;
+  max-width:140px;
+}
+.real-stage-photo{
+  width:100%;
+  height:620px;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+}
+.stage-card>.real-stage-photo{display:block!important}
+@media(max-width:780px){
+  .repsol-logo-real{height:29px;max-width:130px}
+  .repsol-logo-real.mini{height:18px;max-width:78px}
+  .real-stage-photo{height:470px}
+}
